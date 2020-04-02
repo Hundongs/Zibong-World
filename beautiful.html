@@ -1,79 +1,36 @@
 <!doctype html>
 <html>
 <head>
-<title>ZiBong World</title>
-<meta charset="utf-8">
-<style type="text/css">
-a:link{text-decoration:none;}
-a:visited{color:black;text-decoration: none;}
-a:hover{color:#0000FF; text-decoration: underline;}
-a:active{color:#0000FF; text-decoration: none;}
-div#back{
-  width:100%;
-  height:100%;
-  position:absolute; top:0;left:0;right:0;bottom:0;
-  margin:0 auto;
-  background-color:silver
-}
-#page{
-  width:650px;
-  height:95%;
-  background-color: white;
-  position:absolute; top:20px;left:0;right:0;bottom:20px;
-  margin:0 auto;
-}
-#left{
-  margin-top:10px;
-  width:35%;
-  height:75%;
-  float:left;
-  border-right:1px solid silver;
-  border-top:1px solid silver;
-}
-#right{
-  margin-top:10px;
-  width:64%;
-  height:75%;
-  float:left;
-  border-top:1px solid silver;
-}
-#bottom{
-  width:100%;
-  height:10%;
-  float:left;
-  border-top:3px solid silver;
-}
-</style>
+  <title>ZiBong World</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="back">
-<div id="page">
-<h1 style="text-align:center;"><a href="index.html"
-style="text-decoration:none;color:black;">
-<span style="color:red; font-size:1.5em">♥</span> Welcome to ZiBong World <span style="color:red; font-size:1.5em">♥</span></a></h1>
-  <div id="left">
-  <font size="4em">
-  <ol style="line-height:2em;">
-  <li><a href="who.html" >
-  Who is ZiBong??</a></li>
-  <li><a href="how.html">
-  How is she?</a></li>
-  <li><a href="beautiful.html">
-  <strong>Is she beautiful?</strong></a></li></ol></font>
-  </div>
-  <div id="right">
-  <div style="margin-left:30px; margin-top:30px; margin-right:30px;">
-    <h2>그녀는 이쁜가?</h2>
-    그렇다
-  </div>
-  <br>
-  <img src="picture4.png" style="width:50%">
+  <div id="top">
+    <h1><a href="index.html">
+    <span class="heart">♥</span> Welcome to ZiBong World <span class="heart">♥</span></a></h1>
   </div>
   <div id="bottom">
-  secret page
+    <div id="left">
+      <ol>
+        <li><a href="who.html">
+        Who is ZiBong??</a></li>
+        <li><a href="how.html">
+        How is she?</a></li>
+        <li><a href="beautiful.html" id="present">
+        Is she beautiful?</a></li>
+      </ol>
+    </div>
+    <div id="right">
+      <h2>그녀는 이쁜가?</h2>
+      <p>
+        그렇다
+      </p>
+      <img id="ompang" src="picture4.png">
+    </div>
   </div>
-
-</div>
-</div>
+  <div id="foot">
+    secret page
+  </div>
 </body>
 </html>

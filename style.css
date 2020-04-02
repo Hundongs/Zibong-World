@@ -1,0 +1,105 @@
+body{margin:0; background-color: silver; padding:10px;}
+a:link{color:black; text-decoration:none;}
+a:visited{color:black;text-decoration: none;}
+a:hover{color:#0000FF; text-decoration: underline;}
+a:active{color:#0000FF; text-decoration: none;}
+#top a{
+  color: black; text-decoration:none;
+}
+#right a{
+  text-decoration: underline;
+}
+h1{text-align: center; margin:0;}
+h2{margin:0;}
+ol{margin:0;line-height:2em}
+div{
+  margin:0; padding:10px;
+}
+#top{
+  background-color: white;
+  padding:10px;
+  border-bottom: 1px solid silver;
+  margin:0
+}
+#bottom{
+  margin:0;
+  padding:0;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+#left{
+  padding: 20px;
+  border-right:1px solid silver;
+  margin:0;
+  font-size:20px;
+}
+#right{
+  padding: 20px;
+  padding-left: 40px;
+  margin:0;
+}
+#foot{
+  color:white;
+  border-top:3px solid silver;
+  padding:1px;
+  font-size:small;
+}
+#deactivation{
+  margin:0; padding: 0;
+  color:lightgrey
+}
+#right p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#ompang{
+  width:50%
+}
+#buttons{
+  text-align: center;
+}
+.focus{
+  margin-left:30px; margin-top:10px; margin-bottom:10px;
+  color:black; font-weight: bold;
+}
+.heart{
+  color:red; font-size:1.5em
+}
+#present{
+  font-weight:bold;
+}
+@media(max-width:800px){
+  #top{
+    background-color: white;
+    padding:5px;
+    border-bottom: none;
+    margin:0
+  }
+  #bottom{
+    margin:0;
+    padding:0;
+    background-color: white;
+    display: block;
+  }
+  #left{
+    background-color: #eeffee;
+    padding:10px;
+    border-right:1px solid silver;
+    margin:0;
+  }
+  #left li{
+    display:inline;
+    border: 3px solid white;
+    background-color: #ffc;
+    padding: 5px;
+  }
+  #left ol{
+    padding: 0;
+    text-align: center;
+  }
+  #right{
+    padding: 0;
+    text-align: center;
+  }
+}
