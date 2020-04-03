@@ -11,52 +11,63 @@
     <h1><a href="index.html">
     <span class="heart">♥</span> Welcome to ZiBong World <span class="heart">♥</span></a></h1>
   </div>
-  <div id="bottom">
-    <div id="left">
-      <ol>
-        <li><a href="who.html">
-        Who is ZiBong??</a></li>
-        <li><a href="how.html">
-        How is she?</a></li>
-        <li><a href="beautiful.html">
-        Is she beautiful?</a></li>
-      </ol>
-      <div id="buttons">
-        <input type="button" value="Hi" onclick="alert('안뇽 ㅎㅎ')">
-        <input type="button" value="Hey" onclick="alert('메롱 ㅎㅎ')">
-        <input type="button" value="sex" onclick="alert('fuck me')"><br>
-        <input id="day_night" type="button" value="night" onclick="
-          var bodystyle = document.querySelector('body').style;
-          if(this.value === 'night'){
-            bodystyle.backgroundColor='black';
-            this.value='day'
-          } else {
-            bodystyle.backgroundColor='silver';
-            this.value='night'
-          }
-        ">
-      </div>
-    </div>
-    <div id="right">
-      <h2>반갑습니다</h2>
-      <p>
-        이 곳은 지봉이에 대한 정보를 제공하는 사이트입니다.<br>
-      </p>
-      <img id="ompang" src="picture1.png"><br>
-      지금 기분이 어떤지 적고 엔터를 쳐보세요!<br>
-      → <input type="text" size="36" onchange="
-      if(this.value.length <= 3){
-        alert('구래쬬')
-      } else {
-        if(this.value.length <= 10){
-          alert('아구 구래쬬')
+  <div id="menu">
+    <ol>
+      <li><a href="who.html">
+      Who is ZiBong??</a></li>
+      <li><a href="how.html">
+      How is she?</a></li>
+      <li><a href="beautiful.html">
+      Is she beautiful?</a></li>
+    </ol>
+    <div id="buttons">
+      <input class="hibutton" type="button" value="Hi" onclick="alert('안뇽 ㅎㅎ')">
+      <input class="hibutton" type="button" value="Hey" onclick="alert('메롱 ㅎㅎ')">
+      <input class="hibutton" type="button" value="sex" onclick="alert('fuck me')"><br>
+      <input id="day_night" type="button" value="night" onclick="
+        var bodystyle = document.querySelector('body').style;
+        var topastyle = document.querySelector('#top a').style;
+        var menustyle = document.querySelector('#menu').style;
+        if(this.value === 'night'){
+          bodystyle.backgroundColor='black';
+          bodystyle.color='white';
+          topastyle.color='white';
+          menustyle.backgroundColor='lightgrey';
+          this.value='day';
+          this.style.backgroundColor='yellow';
+          this.style.color='red';
         } else {
-          alert('아구~~~~~ 구래쬬~~~~?')
+          bodystyle.backgroundColor='white';
+          bodystyle.color='black';
+          topastyle.color='black';
+          menustyle.backgroundColor='rgb(249, 255, 255)';
+          this.value='night'
+          this.style.backgroundColor='navy';
+          this.style.color='yellow';
         }
-      }
       ">
     </div>
   </div>
+  <div id="content">
+    <h2>반갑습니다</h2>
+    <p>
+      이 곳은 지봉이에 대한 정보를 제공하는 사이트입니다.
+    </p>
+    <img id="ompang" src="picture1.png"><br>
+    지금 기분이 어떤지 적고 엔터를 쳐보세요!<br>
+    → <input type="text" size="36" onchange="
+    if(this.value.length <= 3){
+      alert('구래쬬')
+    } else {
+      if(this.value.length <= 10){
+        alert('아구 구래쬬')
+      } else {
+        alert('아구~~~~~ 구래쬬~~~~?')
+      }
+    }
+    ">
+  </div>
+
   <div id="foot">
     secret page
   </div>
